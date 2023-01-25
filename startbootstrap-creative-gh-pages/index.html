@@ -175,25 +175,25 @@
                         <h4>Admin</h4>
                         <form>
                             <div class="form-row">
-                                <div class="col-md-9 mb-9">
+                                <div class="col-md-9 mb-9 mb-3">
                                     <label for="validationDefault01">First name applicant</label>
                                     <input type="text" class="form-control" id="validationDefault01" placeholder="Luis" required>
                                 </div>
-                                <div class="col-md-9 mb-9">
+                                <div class="col-md-9 mb-9 mb-3">
                                     <label for="validationDefault02">Last name applicant</label>
                                     <input type="text" class="form-control" id="validationDefault02" placeholder="Bauer" required>
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="col-md-9 mb-9">
+                                <div class="col-md-9 mb-9 mb-3">
                                     <label for="validationDefault03">Position name</label>
                                     <input type="text" class="form-control" id="validationDefault03" placeholder="Data scientist" required>
                                 </div>
-                                <div class="col-md-9 mb-9">
+                                <div class="col-md-9 mb-9 mb-3">
                                     <label for="validationDefault04">Company name</label>
                                     <input type="text" class="form-control" id="validationDefault04" placeholder="Google" required>
                                 </div>
-                                <div class="col-md-9 mb-9">
+                                <div class="col-md-9 mb-9 mb-3">
                                     <label for="validationDefault05">Hiring manager name</label>
                                     <input type="text" class="form-control" id="validationDefault05" placeholder="Mr. Weber">
                                 </div>
@@ -215,30 +215,36 @@
                             <div class="form-row">
                                 <div class="col-md-9 mb-9">
                                     <label for="validationDefault01">Personal motivation</label>
-                                    <input type="text" class="form-control" id="validationDefault01" placeholder="What excites you about the role?" required>
+                                    <!-- <input type="text" class="form-control" id="validationDefault01" placeholder="What excites you about the role?" required> -->
+                                    <textarea class="form-control" rows="2" id="uniqueness" placeholder="What excites you about the role?"></textarea>
+
                                 </div>
                                 <div class="col-md-9 mb-9">
                                     <label for="validationDefault02">Company motivation</label>
-                                    <input type="text" class="form-control" id="validationDefault02" placeholder="What excites you about the company?" required>
+                                    <!-- <input type="text" class="form-control" id="validationDefault02" placeholder="What excites you about the company?" required> -->
+                                    <textarea class="form-control" rows="2" id="uniqueness" placeholder="What excites you about the company?"></textarea>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col-md-9 mb-9">
                                     <label for="validationDefault05">Skills</label>
-                                    <input type="text" class="form-control" id="validationDefault05" placeholder="Which skills do have to excel in this position?">
+                                    <input type="text" class="form-control" id="validationDefault05" placeholder="Skills to excel in this position (separate with comma)">
+                                    <!-- <input type="text" class="form-control" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput"> -->
                                 </div>
                                 <div class="col-md-9 mb-9">
                                     <label for="validationDefault03">Why you?</label>
-                                    <input type="text" class="form-control" id="validationDefault03" placeholder="Why you?" required>
+                                    <!-- <input type="text" class="form-control" id="validationDefault03" placeholder="Why you?" required> -->
+                                    <textarea class="form-control" rows="2" id="uniqueness" placeholder="Why you?"></textarea>
                                 </div>
                                 <div class="col-md-9 mb-9">
                                     <label for="validationDefault04">Unique attributes</label>
-                                    <input type="text" class="form-control" id="validationDefault04" placeholder="What should we highlight?" required>
+                                    <!-- <input type="text" class="form-control" id="validationDefault04" placeholder="What should we highlight?" required> -->
+                                    <textarea class="form-control" rows="2" id="attributes" placeholder="What should we highlight?"></textarea>
                                 </div>
                             </div>
                         </form>
                     </div>
-                    <button class="btn btn-primary" type="submit">Submit form</button>
+                    <button class="btn btn-primary mt-3" type="submit">Generate cover letter</button>
                 </div>
             </div>
         </section>
