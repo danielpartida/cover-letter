@@ -56,4 +56,8 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#portfolio a.portfolio-box'
     });
 
+    onclick = () => {
+        document.getElementById("letter").innerHTML = "Hello World";
+    };
+
 });
