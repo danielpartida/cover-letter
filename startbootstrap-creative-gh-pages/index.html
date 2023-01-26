@@ -176,26 +176,26 @@
                         <form>
                             <div class="form-row">
                                 <div class="col-md-9 mb-9 mb-3">
-                                    <label for="validationDefault01">First name applicant</label>
-                                    <input type="text" class="form-control" id="validationDefault01" placeholder="Luis" required>
+                                    <label for="fistNameApplicantId">First name applicant</label>
+                                    <input type="text" class="form-control" id="fistNameApplicantId" placeholder="Luis" required>
                                 </div>
                                 <div class="col-md-9 mb-9 mb-3">
-                                    <label for="validationDefault02">Last name applicant</label>
-                                    <input type="text" class="form-control" id="validationDefault02" placeholder="Bauer" required>
+                                    <label for="lastNameApplicantId">Last name applicant</label>
+                                    <input type="text" class="form-control" id="lastNameApplicantId" placeholder="Bauer" required>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col-md-9 mb-9 mb-3">
-                                    <label for="validationDefault03">Position name</label>
-                                    <input type="text" class="form-control" id="validationDefault03" placeholder="Data scientist" required>
+                                    <label for="positionNameId">Position name</label>
+                                    <input type="text" class="form-control" id="positionNameId" placeholder="Data scientist" required>
                                 </div>
                                 <div class="col-md-9 mb-9 mb-3">
-                                    <label for="validationDefault04">Company name</label>
-                                    <input type="text" class="form-control" id="validationDefault04" placeholder="Google" required>
+                                    <label for="companyNameId">Company name</label>
+                                    <input type="text" class="form-control" id="companyNameId" placeholder="Google" required>
                                 </div>
                                 <div class="col-md-9 mb-9 mb-3">
-                                    <label for="validationDefault05">Hiring manager name</label>
-                                    <input type="text" class="form-control" id="validationDefault05" placeholder="Mr. Weber">
+                                    <label for="hiringManagerNameId">Hiring manager name</label>
+                                    <input type="text" class="form-control" id="hiringManagerNameId" placeholder="Mr. Weber">
                                 </div>
                             </div>
                             <!-- <div class="form-group">
@@ -214,21 +214,21 @@
                         <form>
                             <div class="form-row">
                                 <div class="col-md-9 mb-9">
-                                    <label for="validationDefault01">Personal motivation</label>
-                                    <!-- <input type="text" class="form-control" id="validationDefault01" placeholder="What excites you about the role?" required> -->
-                                    <textarea class="form-control" rows="2" id="uniqueness" placeholder="What excites you about the role?"></textarea>
+                                    <label for="personalMotivationId">Personal motivation</label>
+                                    <!-- <input type="text" class="form-control" id="personalMotivationId" placeholder="What excites you about the role?" required> -->
+                                    <textarea class="form-control" rows="2" id="personalMotivationId" placeholder="What excites you about the role?"></textarea>
 
                                 </div>
                                 <div class="col-md-9 mb-9">
-                                    <label for="validationDefault02">Company motivation</label>
-                                    <!-- <input type="text" class="form-control" id="validationDefault02" placeholder="What excites you about the company?" required> -->
-                                    <textarea class="form-control" rows="2" id="uniqueness" placeholder="What excites you about the company?"></textarea>
+                                    <label for="companyMotivationId">Company motivation</label>
+                                    <!-- <input type="text" class="form-control" id="companyMotivationId" placeholder="What excites you about the company?" required> -->
+                                    <textarea class="form-control" rows="2" id="companyMotivationId" placeholder="What excites you about the company?"></textarea>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col-md-9 mb-9">
-                                    <label for="validationDefault05">Skills</label>
-                                    <input type="text" class="form-control" id="validationDefault05" placeholder="Skills to excel in this position (separate with comma)">
+                                    <label for="skillsId">Skills</label>
+                                    <input type="text" class="form-control" id="skillsId" placeholder="Skills to excel in this position (separate with comma)">
                                     <!-- <input type="text" class="form-control" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput"> -->
                                 </div>
                                 <div class="col-md-9 mb-9">
@@ -237,14 +237,14 @@
                                     <textarea class="form-control" rows="2" id="uniqueness" placeholder="Why you?"></textarea>
                                 </div>
                                 <div class="col-md-9 mb-9">
-                                    <label for="validationDefault04">Unique attributes</label>
+                                    <label for="attributesId">Unique attributes</label>
                                     <!-- <input type="text" class="form-control" id="validationDefault04" placeholder="What should we highlight?" required> -->
-                                    <textarea class="form-control" rows="2" id="attributes" placeholder="What should we highlight?"></textarea>
+                                    <textarea class="form-control" rows="2" id="attributesId" placeholder="What should we highlight?"></textarea>
                                 </div>
                             </div>
                         </form>
                     </div>
-                    <button class="btn btn-primary mt-3" type="submit" onclick="onclick()">Generate cover letter</button>
+                    <button class="btn btn-primary mt-3" type="submit" onclick="onClick()">Generate cover letter</button>
                     <!-- TODO: Generate PDF report using https://stackoverflow.com/questions/18191893/generate-pdf-from-html-in-div-using-javascript-->
                     <text id="letter"></text>
                 </div>
