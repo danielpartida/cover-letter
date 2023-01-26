@@ -56,8 +56,24 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#portfolio a.portfolio-box'
     });
 
-    onclick = () => {
-        document.getElementById("letter").innerHTML = "Hello World";
+    // Build onClick arrow function that fetches form values https://www.w3schools.com/jsref/event_onclick.asp
+    onClick = () => {
+        let firstNameValue = document.getElementById("fistNameApplicantId").value;
+        let lastNameValue = document.getElementById("lastNameApplicantId").value;
+        let positionNameValue = document.getElementById("positionNameId").value;
+        let companyNameValue = document.getElementById("companyNameId").value;
+        let hiringManagerNameValue = document.getElementById("hiringManagerNameId").value;
+        let personalMotivationValue = document.getElementById("personalMotivationId").value;
+        let companyMotivationValue = document.getElementById("companyMotivationId").value;
+        let skilsValue = document.getElementById("skillsId").value;
+        let uniquenessValue = document.getElementById("uniquenessId").value;
+        let attributesValue = document.getElementById("attributesId").value;
+
+        document.getElementById("letter").innerHTML = `First name: ${firstNameValue}, last name: ${lastNameValue}, 
+        position: ${positionNameValue}, company: ${companyNameValue}, hiring manager: ${hiringManagerNameValue}, 
+        personal motivation: ${personalMotivationValue}, company motivation: ${companyMotivationValue}, 
+        skills: ${skilsValue}, why you?: ${uniquenessValue}, attributes to highlight: ${attributesValue}
+        `;
     };
 
 });
