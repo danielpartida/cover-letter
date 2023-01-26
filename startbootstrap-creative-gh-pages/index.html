@@ -171,10 +171,10 @@
                     </div>
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-                    <div class="col-sm">
-                        <h4>General information</h4>
-                        <form>
-                            <div class="form-row">
+                    <form>
+                        <div class="row">
+                            <div class="col-sm">
+                                <h4>General information</h4>
                                 <div class="col-md-9 mb-9 mb-3">
                                     <label for="fistNameApplicantId">First name applicant</label>
                                     <input type="text" class="form-control" id="fistNameApplicantId" placeholder="Luis" required>
@@ -183,8 +183,6 @@
                                     <label for="lastNameApplicantId">Last name applicant</label>
                                     <input type="text" class="form-control" id="lastNameApplicantId" placeholder="Bauer" required>
                                 </div>
-                            </div>
-                            <div class="form-row">
                                 <div class="col-md-9 mb-9 mb-3">
                                     <label for="positionNameId">Position name</label>
                                     <input type="text" class="form-control" id="positionNameId" placeholder="Data scientist" required>
@@ -198,53 +196,40 @@
                                     <input type="text" class="form-control" id="hiringManagerNameId" placeholder="Mr. Weber">
                                 </div>
                             </div>
-                            <!-- <div class="form-group">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                                    <label class="form-check-label" for="invalidCheck2">
-                                    Agree to terms and conditions
-                                    </label>
-                                </div>
-                            </div> -->
-                        </form>
-                    </div>
 
-                    <div class="col-sm">
-                        <h4>Motivation</h4>
-                        <form>
-                            <div class="form-row">
-                                <div class="col-md-9 mb-9">
-                                    <label for="personalMotivationId">Personal motivation</label>
-                                    <!-- <input type="text" class="form-control" id="personalMotivationId" placeholder="What excites you about the role?" required> -->
-                                    <textarea class="form-control" rows="2" id="personalMotivationId" placeholder="What excites you about the role?"></textarea>
-
-                                </div>
-                                <div class="col-md-9 mb-9">
-                                    <label for="companyMotivationId">Company motivation</label>
-                                    <!-- <input type="text" class="form-control" id="companyMotivationId" placeholder="What excites you about the company?" required> -->
-                                    <textarea class="form-control" rows="2" id="companyMotivationId" placeholder="What excites you about the company?"></textarea>
-                                </div>
+                            <div class="col-sm">
+                                <h4>Motivation</h4>
+                                    <div class="col-md-9 mb-9">
+                                        <label for="personalMotivationId">Personal motivation</label>
+                                        <!-- <input type="text" class="form-control" id="personalMotivationId" placeholder="What excites you about the role?" required> -->
+                                        <textarea class="form-control" rows="2" id="personalMotivationId" placeholder="What excites you about the role?"></textarea>
+                                    </div>
+                                    <div class="col-md-9 mb-9">
+                                        <label for="companyMotivationId">Company motivation</label>
+                                        <!-- <input type="text" class="form-control" id="companyMotivationId" placeholder="What excites you about the company?" required> -->
+                                        <textarea class="form-control" rows="2" id="companyMotivationId" placeholder="What excites you about the company?"></textarea>
+                                    </div>
+                                    <div class="col-md-9 mb-9">
+                                        <label for="skillsId">Skills</label>
+                                        <input type="text" class="form-control" id="skillsId" placeholder="Skills to excel in this position (separate with comma)">
+                                        <!-- <input type="text" class="form-control" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput"> -->
+                                    </div>
+                                    <div class="col-md-9 mb-9">
+                                        <label for="uniquenessId">Why you?</label>
+                                        <!-- <input type="text" class="form-control" id="validationDefault03" placeholder="Why you?" required> -->
+                                        <textarea class="form-control" rows="2" id="uniquenessId" placeholder="Why you?"></textarea>
+                                    </div>
+                                    <div class="col-md-9 mb-9">
+                                        <label for="attributesId">Unique attributes</label>
+                                        <!-- <input type="text" class="form-control" id="validationDefault04" placeholder="What should we highlight?" required> -->
+                                        <textarea class="form-control" rows="2" id="attributesId" placeholder="What should we highlight?"></textarea>
+                                    </div>
                             </div>
-                            <div class="form-row">
-                                <div class="col-md-9 mb-9">
-                                    <label for="skillsId">Skills</label>
-                                    <input type="text" class="form-control" id="skillsId" placeholder="Skills to excel in this position (separate with comma)">
-                                    <!-- <input type="text" class="form-control" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput"> -->
-                                </div>
-                                <div class="col-md-9 mb-9">
-                                    <label for="uniquenessId">Why you?</label>
-                                    <!-- <input type="text" class="form-control" id="validationDefault03" placeholder="Why you?" required> -->
-                                    <textarea class="form-control" rows="2" id="uniquenessId" placeholder="Why you?"></textarea>
-                                </div>
-                                <div class="col-md-9 mb-9">
-                                    <label for="attributesId">Unique attributes</label>
-                                    <!-- <input type="text" class="form-control" id="validationDefault04" placeholder="What should we highlight?" required> -->
-                                    <textarea class="form-control" rows="2" id="attributesId" placeholder="What should we highlight?"></textarea>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <button class="btn btn-primary mt-3" type="submit" onclick="onClick()">Generate cover letter</button>
+                        </div>
+                        <div class="row">
+                            <button class="btn btn-primary mt-3" type="submit" onclick="onClick()">Generate cover letter</button>
+                        </div>
+                    </form>
                     <!-- TODO: Generate PDF report using https://stackoverflow.com/questions/18191893/generate-pdf-from-html-in-div-using-javascript-->
                     <text id="letter"></text>
                 </div>

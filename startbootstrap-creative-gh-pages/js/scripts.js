@@ -56,7 +56,8 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#portfolio a.portfolio-box'
     });
 
-    // Build onClick arrow function that fetches form values https://www.w3schools.com/jsref/event_onclick.asp
+    // Build onClick arrow function that fetches form values https://www.w3schools.com/jsref/event_onclick.asp & https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
+    // TODO: Change className of input fields to is-valid or is-invalid https://stackoverflow.com/questions/14361517/mark-error-in-form-using-bootstrap & https://stackoverflow.com/questions/3937513/javascript-validation-for-empty-input-field
     onClick = () => {
         let firstNameValue = document.getElementById("fistNameApplicantId").value;
         let lastNameValue = document.getElementById("lastNameApplicantId").value;
