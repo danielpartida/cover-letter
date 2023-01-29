@@ -24,7 +24,7 @@ def index():
     return render_template("index.html", result=result)
 
 
-def generate_prompt(name,job_position,company):
+def generate_prompt(name, job_position, company):
     prompt_gen = """
      Complete the following introduction for a cover letter: 
      Hi my name is {}, I'd like a position as a {} in {}, I'm prepared to do so... """.format(
@@ -33,5 +33,6 @@ def generate_prompt(name,job_position,company):
     print(prompt_gen)
     return prompt_gen
 
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(port=5000, debug=True)
