@@ -56,10 +56,12 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#portfolio a.portfolio-box'
     });
 
-    // Build onClick arrow function that fetches form values https://www.w3schools.com/jsref/event_onclick.asp & https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
-    // TODO: Change className of input fields to is-valid or is-invalid https://stackoverflow.com/questions/14361517/mark-error-in-form-using-bootstrap & https://stackoverflow.com/questions/3937513/javascript-validation-for-empty-input-field
+    // Build onClick arrow function that fetches form values https://www.w3schools.com/jsref/event_onclick.asp 
+    // https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
+    // TODO: Change className of input fields to is-valid or is-invalid https://stackoverflow.com/questions/14361517/mark-error-in-form-using-bootstrap 
+    // https://stackoverflow.com/questions/3937513/javascript-validation-for-empty-input-field
     onClick = () => {
-        let firstNameValue = document.getElementById("fistNameApplicantId").value;
+        let firstNameValue = document.getElementById("firstNameApplicantId").value;
         let lastNameValue = document.getElementById("lastNameApplicantId").value;
         let positionNameValue = document.getElementById("positionNameId").value;
         let companyNameValue = document.getElementById("companyNameId").value;
@@ -70,11 +72,17 @@ window.addEventListener('DOMContentLoaded', event => {
         let uniquenessValue = document.getElementById("uniquenessId").value;
         let attributesValue = document.getElementById("attributesId").value;
 
-        document.getElementById("letter").innerHTML = `First name: ${firstNameValue}, last name: ${lastNameValue}, 
-        position: ${positionNameValue}, company: ${companyNameValue}, hiring manager: ${hiringManagerNameValue}, 
-        personal motivation: ${personalMotivationValue}, company motivation: ${companyMotivationValue}, 
-        skills: ${skilsValue}, why you?: ${uniquenessValue}, attributes to highlight: ${attributesValue}
-        `;
+        // Check that value is not null or empty https://stackoverflow.com/questions/43309712/how-to-check-if-a-value-is-not-null-and-not-empty-string-in-js
+        if (firstNameValue !== '' && lastNameValue !== '' && positionNameValue !== '' && companyNameValue !== '' && companyNameValue !== '' &&
+        personalMotivationValue !== '' && companyMotivationValue !== '' && skilsValue !== '' && uniquenessValue !== '' && attributesValue !== '') {
+            document.getElementById("letter").innerHTML = ` Generate a cover letter for a job application with the following inputs: First name: ${firstNameValue}, last name: ${lastNameValue}, 
+            position: ${positionNameValue}, company: ${companyNameValue}, hiring manager: ${hiringManagerNameValue}, 
+            personal motivation: ${personalMotivationValue}, company motivation: ${companyMotivationValue}, 
+            skills: ${skilsValue}, why you?: ${uniquenessValue}, attributes to highlight: ${attributesValue}
+            `;
+        } else {
+            alert('Please complete all the input fields to generate your cover letter');
+        }
     };
 
 });
