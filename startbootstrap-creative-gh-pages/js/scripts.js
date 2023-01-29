@@ -80,6 +80,9 @@ window.addEventListener('DOMContentLoaded', event => {
             personal motivation: ${personalMotivationValue}, company motivation: ${companyMotivationValue}, 
             skills: ${skilsValue}, why you?: ${uniquenessValue}, attributes to highlight: ${attributesValue}
             `;
+            
+            // FIXME: scroll down after click
+            document.getElementById('id-download-results').scrollIntoView({ behavior: 'smooth' });
         } else {
             alert('Please complete all the input fields to generate your cover letter');
         }
