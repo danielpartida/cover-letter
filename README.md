@@ -5,4 +5,5 @@
 - Template for small agencies https://startbootstrap.com/previews/agency
 
 ## Flask application
-- Install library openai
+- Install library openai, dotenv
+- Use .env file to authenticate with OpenAI using private keys
