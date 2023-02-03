@@ -6,9 +6,12 @@ load_dotenv()
 
 app = Flask(__name__)
 
+# TODO: Fetch form data using Ajax, read https://stackoverflow.com/questions/10434599/get-the-data-received-in-a-flask-request and 
+# https://stackoverflow.com/questions/22195065/how-to-send-a-json-object-using-html-form-data
 
-@app.route("/", methods=("GET", "POST"))
-def index():
+
+@app.route("/generate_cover_letter", methods=("GET", "POST"))
+def generate_cover_letter():
 
     # Get private keys of OpenAI
     private_key = os.getenv("OPENAI_API_KEY")
